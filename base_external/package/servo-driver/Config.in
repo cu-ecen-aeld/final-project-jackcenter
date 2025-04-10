@@ -1,0 +1,4 @@
+config BR2_PACKAGE_SERVO_DRIVER
+	bool "servo-driver"
+	help
+	  Module and application code for a servo driver
