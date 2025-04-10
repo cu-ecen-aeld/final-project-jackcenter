@@ -1,4 +1,4 @@
-SERVO_DRIVER_VERSION = a58e0a3cb1dd454d1687d2d5293d94130c1066b0
+SERVO_DRIVER_VERSION = 67717edc61ef7832f36ddfacac3f42e7be1f130d
 SERVO_DRIVER_SITE = git@github.com:jackcenter/final-project-application-servo-driver.git
 SERVO_DRIVER_SITE_METHOD = git
 SERVO_DRIVER_GIT_SUBMODULES = NO
