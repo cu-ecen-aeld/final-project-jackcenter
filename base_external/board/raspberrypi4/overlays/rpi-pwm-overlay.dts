@@ -1,0 +1,37 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "brcm,bcm2835";
+
+    fragment@0 {
+        target-path = "/soc/gpio@7e200000";
+        __overlay__ {
+            my_pwm_pins: my_pwm_pins {
+                brcm,pins = <18 19>;
+                brcm,function = <2 2>; // ALT5
+            };
+        };
+    };
+
+    fragment@1 {
+        target-path = "/soc/pwm@7e20c000";
+        __overlay__ {
+            status = "okay";
+            pinctrl-names = "default";
+            pinctrl-0 = <&my_pwm_pins>;
+        };
+    };
+
+    fragment@2 {
+        target-path = "/soc";
+        __overlay__ {
+            my_pwm_device: my_pwm_device {
+                compatible = "mycompany,my-pwm-device";
+                pwms = <&pwm 0>, <&pwm 1>;
+                pwm-names = "pwm0", "pwm1";
+                status = "okay";
+            };
+        };
+    };
+};
