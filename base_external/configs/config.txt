@@ -28,5 +28,4 @@ dtoverlay=miniuart-bt
 # enable autoprobing of Bluetooth driver without need of hciattach/btattach
 dtoverlay=krnbt=on
 
-dtoverlay=pwm-2chan
 dtoverlay=rpi-pwm

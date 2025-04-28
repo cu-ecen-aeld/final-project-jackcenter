@@ -28,7 +28,7 @@
         __overlay__ {
             my_pwm_device: my_pwm_device {
                 compatible = "mycompany,my-pwm-device";
-                pwms = <&pwm 0>, <&pwm 1>;
+                pwms = <&pwm 0 20000000>, <&pwm 1 20000000>;
                 pwm-names = "pwm0", "pwm1";
                 status = "okay";
             };
