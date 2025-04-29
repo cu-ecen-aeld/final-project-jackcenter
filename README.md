@@ -1,3 +1,5 @@
+# Final Project Video
+Jack Center: [Link to Project Video Page](https://github.com/cu-ecen-aeld/final-project-jackcenter/wiki/Final-Project-Video)
 # final-project-jackcenter
 [Link to Project Overview](https://github.com/cu-ecen-aeld/final-project-jackcenter/wiki/Project-Overview)
 
